@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DhsongBoardApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(DhsongBoardApplication.class, args);
     }
 }
