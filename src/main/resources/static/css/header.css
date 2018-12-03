@@ -21,7 +21,7 @@
 .customer_link a:hover {color:#61bffd;border-bottom:0px !important;}
 
 .family_site {position:absolute;top:0px;right:0px;width:150px;background:#61bffd}
-.family_site span {display:block;height:76px;line-height:76px;font-size:13px;font-weight:600;color:#fff;background:url('/layouts/copykiller_lite/img/w_arrow.png') no-repeat 90% center;cursor:pointer;text-align:left;padding-left:20px;}
+.family_site span {display:block;height:76px;line-height:76px;font-size:13px;font-weight:600;color:#fff;background:url('/img/w_arrow.png') no-repeat 90% center;cursor:pointer;text-align:left;padding-left:20px;}
 .family_site .faimly_link {display:none;width:80%;margin:0px auto;border-top:1px solid #87cefd;padding:10px 0px;}
 .family_site .faimly_link:after {display:block;visibility:hidden;clear:both;content:""}
 .family_site .faimly_link li {display:block;}

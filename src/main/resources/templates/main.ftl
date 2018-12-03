@@ -38,7 +38,7 @@
     <!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
     <!-- RSS -->
     <!-- ICON -->
-    <link rel="shortcut icon" href="files/attach/xeicon/favicon.ico" />	<link rel="apple-touch-icon" href="/img/mobiconSample.png" />
+    <link rel="shortcut icon" href="img/favicon.ico" />	<link rel="apple-touch-icon" href="img/mobiconSample.png" />
 
     <script async src="/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-8197202289952581",enable_page_level_ads: true});</script>
     <link rel="stylesheet" href="/css/popup_rest.css">
@@ -49,7 +49,7 @@
     </script>
     <link rel="stylesheet" href="/css/popup.css">
 
-    <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript" src="js/wcslog.js"></script>
     <script type="text/javascript">
 
         if(!wcs_add) var wcs_add = {};
@@ -70,7 +70,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="카피킬러" />
     <meta property="og:description" content="표절검사의 기준! 무료표절검사, 논문표절, 자소서표절, 레포트표절 검사 서비스와 글쓰기 핵심도구를 제공합니다." />
-    <meta property="og:image" content="https://www.copykiller.com/common/img/logo/ck-logo.png" />
+    <meta property="og:image" content="/img/ck-logo.png" />
     <meta property="og:url" content="https://www.copykiller.com" />
     <style>
         .banner_wrap {display:block;border-top:1px solid #d3d3d3;background:#ececec;}
@@ -128,23 +128,23 @@
         }
 
         ._popup_skin .pop-info .top {
-            background: url("/common/tpl/popup/img/popup_small_bg_top2.png") left top no-repeat;
+            background: url("/img/popup_small_bg_top2.png") left top no-repeat;
             height: 32px;
             text-align: right;
         }
 
         ._popup_skin .pop-info .middle {
-            background: url("/common/tpl/popup/img/popup_small_bg_middle.png") left center repeat-y;
+            background: url("/img/popup_small_bg_middle.png") left center repeat-y;
         }
 
         ._popup_skin .pop-info .bottom {
             height: 31px;
-            background: url("/common/tpl/popup/img/popup_small_bg_bottom.png") left bottom no-repeat;
+            background: url("/img/popup_small_bg_bottom.png") left bottom no-repeat;
             margin: 0;
         }
 
         ._popup_skin .pop-info .symbol {
-            background: url("/common/tpl/popup/img/img-info.png") center center no-repeat;
+            background: url("/img/img-info.png") center center no-repeat;
             height: 120px
         }
 
@@ -184,21 +184,21 @@
         }
 
         ._popup_skin .pop-wait .top {
-            background: url("/common/tpl/popup/img/popup_small_bg_top.png") left top no-repeat;
+            background: url("/img/popup_small_bg_top.png") left top no-repeat;
             height: 32px;
         }
 
         ._popup_skin .pop-wait .middle {
-            background: url("/common/tpl/popup/img/popup_small_bg_middle.png") left center repeat-y;
+            background: url("/img/popup_small_bg_middle.png") left center repeat-y;
         }
 
         ._popup_skin .pop-wait .bottom {
             height: 31px;
-            background: url("/common/tpl/popup/img/popup_small_bg_bottom.png") left bottom no-repeat;
+            background: url("/img/popup_small_bg_bottom.png") left bottom no-repeat;
         }
 
         ._popup_skin .pop-wait .symbol {
-            background: url("/common/tpl/popup/img/clock.gif") center center no-repeat;
+            background: url("/img/clock.gif") center center no-repeat;
             height: 100px;
         }
 
@@ -450,17 +450,17 @@
             <div class="main_contents_top">
                 <div class="contents_box">
                     <span class="contents_tit">글쓰기 도구</span>
-                    <a href="http://citation.sawoo.com/ref/intro" target="_blank"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico06.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>출처생성기</span></a>
-                    <a href="http://citation.sawoo.com/ref/guide/chicago" target="_blank"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico07.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>인용출처표기법</span></a>
-                    <a href="http://spell.sawoo.com/index"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico11.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>맞춤법</span></a>
-                    <a href="http://textcount.sawoo.com" target="_blank"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico05.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>글자수세기</span></a>
+                    <a href="http://citation.sawoo.com/ref/intro" target="_blank"><div style="background: url('/img/ico06.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>출처생성기</span></a>
+                    <a href="http://citation.sawoo.com/ref/guide/chicago" target="_blank"><div style="background: url('/img/ico07.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>인용출처표기법</span></a>
+                    <a href="http://spell.sawoo.com/index"><div style="background: url('/img/ico11.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>맞춤법</span></a>
+                    <a href="http://textcount.sawoo.com" target="_blank"><div style="background: url('/img/ico05.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>글자수세기</span></a>
                 </div>
                 <div class="contents_box" style="margin-left:105px;">
                     <span class="contents_tit">연구윤리 교육자료</span>
-                    <a href="http://edu.copykiller.com/?page_id=1280" target="_blank"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico08.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>궁금해요</span></a>
-                    <a href="http://edu.copykiller.com/?page_id=3355" target="_blank"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico09.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>연구윤리동향</span></a>
-                    <a href="http://edu.copykiller.com/?page_id=3290" target="_blank"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico10.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>교육자료</span></a>
-                    <a href="http://edu.copykiller.com/?page_id=4384" target="_blank"><div style="background: url('/modules/page/skins/welcome/lite2/img/ico12.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>전문가상담</span></a>
+                    <a href="http://edu.copykiller.com/?page_id=1280" target="_blank"><div style="background: url('/img/ico08.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>궁금해요</span></a>
+                    <a href="http://edu.copykiller.com/?page_id=3355" target="_blank"><div style="background: url('/img/ico09.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>연구윤리동향</span></a>
+                    <a href="http://edu.copykiller.com/?page_id=3290" target="_blank"><div style="background: url('/img/ico10.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>교육자료</span></a>
+                    <a href="http://edu.copykiller.com/?page_id=4384" target="_blank"><div style="background: url('/img/ico12.png') no-repeat center center;position: absolute;width: 60px;height: 100%"></div><span>전문가상담</span></a>
                 </div>
             </div>
             <div class="main_contents_mid">
@@ -527,26 +527,32 @@
     </script>
 
 
-    <script src="/js/jquery.bxslider.min.js"></script>
+    <script src="/js/jquery.js"></script>
 
     <div class="banner_wrap">
         <div class="layout taC">
-            <ul class="bxslider">
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/01.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/02.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/03.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/04.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/05.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/06.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/07.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/08.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/09.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/10.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/11.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/12.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/13.png"></li>
-                <li><img src="https://www.copykiller.com/common/img/journal-banner/14.png"></li>
-            </ul>
+            <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
+                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 67px;">
+                    <ul class="bxslider" style="width: auto; position: relative; transition-duration: 1.3s; transform: translate3d(0px, -737px, 0px);">
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;" class="bx-clone"><img src="/img/01.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;" class="bx-clone"><img src="/img/14.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/01.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/02.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/03.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/04.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/05.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/06.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/07.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/08.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/09.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/10.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/11.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/12.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/13.png"></li>
+                        <li style="float: none; list-style: outside none none; position: relative; width: 1023px;"><img src="/img/14.png"></li>
+                        </ul>
+                    </div>
+            </div>
         </div>
         <script type="text/javascript">
             jQuery(document).ready(function () {

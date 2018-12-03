@@ -113,7 +113,7 @@ span.ck-btn02-grey:hover {
 	height: 60px;
 	animation: rotate 0.8s infinite linear;
 	border-right-color: transparent;
-	background-image: url("/common/img/loading.png");
+	background-image: url('/img/loading.png');
 	margin: 0 auto;
 }
 @keyframes rotate {
