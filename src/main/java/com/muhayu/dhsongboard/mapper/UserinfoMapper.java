@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 //import org.apache.ibatis.annotations.*;
 
 @Mapper
+//@Component
 public interface UserinfoMapper{
     int userinfoInsert(Userinfomodel userinfomodel);
 }

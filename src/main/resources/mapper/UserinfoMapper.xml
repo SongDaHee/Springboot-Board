@@ -5,11 +5,11 @@
 
 <mapper namespace="com.muhayu.dhsongboard.mapper.UserinfoMapper">
 
-    <select id="userinfoList" resultType="com.muhayu.dhsongboard.model">
+    <select id="userinfoList" resultType="com.muhayu.dhsongboard.model.Userinfomodel">
         SELECT * FROM userinfo
     </select>
 
-    <insert id="userinfoInsert" parameterType="com.muhayu.dhsongboard.model">
+    <insert id="userinfoInsert" parameterType="com.muhayu.dhsongboard.model.Userinfomodel">
         insert into userinfo('id','email','password','name')
         values (#{id}, #{email}, #{password}, #{name})
     </insert>
