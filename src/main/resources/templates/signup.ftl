@@ -53,28 +53,23 @@
         <div class="login-form">
             <div class="main-div">
                 <div class="panel">
-                    <h2>Login</h2>
-                    <p>Please enter your email and password</p>
+                    <h2>SignUp</h2>
+                    <p>Please enter your nickname,<br> email and password</p>
                 </div>
                 <form id="Login">
 
                     <div class="form-group">
-
-
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
-
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
                     </div>
 
                     <div class="form-group">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                    </div>
 
+                    <div class="form-group">
                         <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-
                     </div>
-                    <div class="forgot">
-                        <a href="reset.html">Forgot password?</a>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
-
+                    <button type="submit" class="btn btn-primary">SignUp</button>
                 </form>
             </div>
         </div>

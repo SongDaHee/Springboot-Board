@@ -68,11 +68,8 @@
                 <div class="form-group">
 
                     <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
 
-                </div>
-                <div class="forgot">
-                    <a href="reset.html">Forgot password?</a>
-                </div>
                 <button type="submit" class="btn btn-primary">Login</button>
 
             </form>
