@@ -63,13 +63,13 @@
             <form id="Login" method="post" action="/login-proc">
 
                 <div class="form-group">
-                    <input type="email" class="form-control" name="input_Email" placeholder="Email Address">
+                    <input type="email" class="form-control" name="input_email" placeholder="Email Address">
 
                 </div>
 
                 <div class="form-group">
 
-                    <input type="text" class="form-control" name="input_Password" placeholder="Password">
+                    <input type="text" class="form-control" name="input_password" placeholder="Password">
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
 

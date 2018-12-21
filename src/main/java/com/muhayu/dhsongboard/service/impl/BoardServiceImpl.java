@@ -1,4 +1,4 @@
-package com.muhayu.dhsongboard.service.imp;
+package com.muhayu.dhsongboard.service.impl;
 
 import com.muhayu.dhsongboard.mapper.BoardMapper;
 import com.muhayu.dhsongboard.model.BoardModel;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class BoardServiceImpl implements BoardService {
+public class BoardServiceImpl implements BoardService{
 
     @Autowired
     BoardMapper boardMapper;

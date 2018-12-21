@@ -4,7 +4,9 @@ import com.muhayu.dhsongboard.model.BoardModel;
 
 import java.util.List;
 
+
 public interface BoardService {
+
     int insertBoard(BoardModel board);
 
     List<BoardModel> selectList(String user);
@@ -14,4 +16,5 @@ public interface BoardService {
     int updateBoard(BoardModel board);
 
     int deleteBoard(Integer num);
+
 }

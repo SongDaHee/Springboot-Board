@@ -24,9 +24,9 @@ public class ListController{
 
     @RequestMapping(value="/list")
     public String list(Model model, HttpServletRequest request, HttpSession session){
-        UserInfoModel userinfo = (UserInfoModel) session.getAttribute("login");
+        UserInfoModel userInfo = (UserInfoModel) session.getAttribute("login");
 
-        String email = userinfo.getEmail();
+        String email = userInfo.getEmail();
 
         List<BoardModel> list = boardService.selectList(email);
 
@@ -44,9 +44,9 @@ public class ListController{
     public String writeProc(HttpServletRequest request, HttpSession session) {
         BoardModel board = new BoardModel();
 
-        UserInfoModel userinfo= (UserInfoModel) session.getAttribute("login");
+        UserInfoModel userInfo = (UserInfoModel) session.getAttribute("login");
 
-        String email = userinfo.getEmail();
+        String email = userInfo.getEmail();
         String title = request.getParameter("input_title");
         String content = request.getParameter("input_content");
         String date = request.getParameter("input_date");
@@ -63,48 +63,34 @@ public class ListController{
     }
 
     @RequestMapping(value="/list/view/*")
-    public String view(HttpServletRequest request, Model model){
+    public String view(Model model, HttpServletRequest request){
 
         StringBuffer url = request.getRequestURL();
 
-        ///list/view/* 에서 *부분 값을 구한다
-        //Integer num = url.charAt(url.length() - 1) - '0';
         Integer num = Integer.valueOf(StringUtils.substringAfter(url.toString(), "/list/view/"));
 
         BoardModel board = boardService.selectByNum(num);
 
-        String date = board.getDate();
-        String title = board.getTitle();
-        String content = board.getContent();
-
-        model.addAttribute("date",date);
-        model.addAttribute("title",title);
-        model.addAttribute("content",content);
-        model.addAttribute("num",num);
+        model.addAttribute("board",board);
 
         return "view";
     }
 
     @RequestMapping(value="/list/edit/*")
-    public String edit(HttpServletRequest request, Model model2){
+    public String edit(Model model, HttpServletRequest request){
         StringBuffer url = request.getRequestURL();
         Integer num = Integer.valueOf(StringUtils.substringAfter(url.toString(), "/list/edit/"));
 
-        BoardModel board2 = boardService.selectByNum(num);
+        BoardModel board = boardService.selectByNum(num);
 
-        String title = board2.getTitle();
-        String content = board2.getContent();
-
-        model2.addAttribute("title",title);
-        model2.addAttribute("content",content);
-        model2.addAttribute("num",num);
+        model.addAttribute("board",board);
 
         return "edit";
     }
 
     @RequestMapping(value="/list/edit-proc/*")
     public String editProc(HttpServletRequest request,HttpSession session){
-        StringBuffer url=request.getRequestURL();
+        StringBuffer url = request.getRequestURL();
         Integer num = Integer.valueOf(StringUtils.substringAfter(url.toString(), "/list/edit-proc/"));
 
         BoardModel board3 = new BoardModel();
@@ -124,7 +110,7 @@ public class ListController{
 
     @RequestMapping(value="/list/delete/*") //조회페이지에서 삭제받을 때
     public String delete(HttpServletRequest request){
-        StringBuffer url=request.getRequestURL();
+        StringBuffer url = request.getRequestURL();
         Integer num = Integer.valueOf(StringUtils.substringAfter(url.toString(), "/list/delete/"));
 
         boardService.deleteBoard(num);

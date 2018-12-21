@@ -68,23 +68,22 @@
         <form>
             <fieldset>
                 <legend><b>글 조회하기</b></legend>
-
                 <div class="form-group">
-                    <label>날짜 : ${date}</label>
+                    <label>날짜 : ${board.date}</label>
                 </div>
 
                 <div class="form-group">
-                    <label>제목 : ${title}</label>
+                    <label>제목 : ${board.title}</label>
                 </div>
 
                 <div class="form-group">
-                    <label>내용<br> ${content}</label>
+                    <label>내용<br> ${board.content}</label>
                 </div>
 
                 <button type="button" class="btn btn-primary"
-                        onclick="location.href='http://localhost:8080/list/edit/${num}'">수정하기</button>
+                        onclick="location.href='http://localhost:8080/list/edit/${board.num}'">수정하기</button>
                 <button type="button" class="btn btn-primary"
-                        onclick="location.href='http://localhost:8080/list/delete/${num}'">삭제</button>
+                        onclick="location.href='http://localhost:8080/list/delete/${board.num}'">삭제</button>
             </fieldset>
         </form>
     </div>

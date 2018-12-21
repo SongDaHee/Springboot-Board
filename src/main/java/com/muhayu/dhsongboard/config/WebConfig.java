@@ -20,3 +20,4 @@ class WebConfig extends WebMvcConfigurerAdapter {
                 .excludePathPatterns("/home", "/login", "/login-proc", "/signup", "/signup-proc");
     }
 }
+

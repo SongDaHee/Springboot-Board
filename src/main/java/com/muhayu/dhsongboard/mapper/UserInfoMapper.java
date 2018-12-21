@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 public interface UserInfoMapper {
     int insertUserInfo(UserInfoModel userinfo);
 
-    UserInfoModel loginCheck(UserInfoModel userinfo);
+    UserInfoModel selectByEmail(String email);
+
 }
 

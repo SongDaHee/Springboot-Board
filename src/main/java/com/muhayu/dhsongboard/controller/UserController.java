@@ -5,10 +5,12 @@ import com.muhayu.dhsongboard.service.UserInfoService;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
 
 @Controller
 public class UserController {
@@ -22,18 +24,19 @@ public class UserController {
     }
 
     @RequestMapping(value = "/signup-proc")
-    public String signuProc(HttpServletRequest request) throws Exception {
+    public String signupProc(HttpServletRequest request) throws Exception {
 
-        UserInfoModel userinfo = new UserInfoModel();
+        UserInfoModel userInfo = new UserInfoModel();
 
-        String email = request.getParameter("input_Email");
-        String password = request.getParameter("input_Password");
-        String encode_password= BCrypt.hashpw(password,BCrypt.gensalt());
-        String name = request.getParameter("input_Name");
-        userinfo.setEmail(email);
-        userinfo.setPassword(encode_password);
-        userinfo.setName(name);
-        userinfoService.insertUserInfo(userinfo);
+        String email = request.getParameter("input_email");
+        String password = request.getParameter("input_password");
+        String encodePassword = BCrypt.hashpw(password,BCrypt.gensalt());
+        String name = request.getParameter("input_name");
+
+        userInfo.setEmail(email);
+        userInfo.setPassword(encodePassword);
+        userInfo.setName(name);
+        userinfoService.insertUserInfo(userInfo);
 
         return "redirect:/login";
     }
@@ -44,30 +47,26 @@ public class UserController {
     }
 
     @RequestMapping(value = "/login-proc")
-    public String loginProc(UserInfoModel userinfo2, HttpServletRequest request, HttpSession session) {
-        String email = request.getParameter("input_Email");
-        String password = request.getParameter("input_Password");
+    public String loginProc(HttpServletRequest request, HttpSession session, Model model) {
+        String email = request.getParameter("input_email");
+        String password = request.getParameter("input_password");
 
-        UserInfoModel userinfo;
-        userinfo2.setEmail(email);
-        userinfo=userinfoService.loginCheck(userinfo2);
+        try{
+            UserInfoModel userInfo = userinfoService.procLogin(email,password,session);
 
-        if(session.getAttribute("login")!=null){
-            session.removeAttribute("login");
+            if(userInfo==null)
+            {
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            model.addAttribute("msg",e.getMessage());
+            return "/login";
         }
-        if(userinfo!=null
-                && BCrypt.checkpw(password,userinfo.getPassword())){
-            request.getSession().setAttribute("login",userinfo);
-            request.getSession().setMaxInactiveInterval(60*30);
-
-            return "forward:/home";
-        }
-        else{
-            return "redirect:/login";
-        }
+        return "redirect:/list";
     }
+
     // 로그아웃 하는 부분
-    @RequestMapping(value="/logout")
+    @RequestMapping(value = "/logout")
     public String logout(HttpSession session) {
         session.invalidate();
         return "redirect:/login";

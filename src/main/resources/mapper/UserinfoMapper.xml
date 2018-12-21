@@ -10,8 +10,8 @@
         values (#{email}, #{password}, #{name})
     </insert>
 
-    <select id = "loginCheck" resultType = "com.muhayu.dhsongboard.model.UserInfoModel">
-        SELECT * FROM userinfo WHERE email = #{email}
+    <select id="selectByEmail" resultType="com.muhayu.dhsongboard.model.UserInfoModel">
+        select * from userinfo where email=#{email}
     </select>
 
 </mapper>

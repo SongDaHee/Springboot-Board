@@ -65,7 +65,7 @@
 
 <div class="back_img">
     <div class="container">
-        <form method="post" action="/list/edit-proc/${num}">
+        <form method="post" action="/list/edit-proc/${board.num}">
             <fieldset>
                 <legend><b>글 수정하기</b></legend>
 
@@ -76,12 +76,12 @@
 
                 <div class="form-group">
                     <label>제목</label>
-                    <input type="text" class="form-control" name="input_title" placeholder="${title}">
+                    <input type="text" class="form-control" name="input_title" placeholder="${board.title}">
                 </div>
 
                 <div class="form-group">
                     <label>내용</label>
-                    <textarea class="form-control" name="input_content" rows="10">${content}</textarea>
+                    <textarea class="form-control" name="input_content" rows="10">${board.content}</textarea>
                 </div>
                 <div class="button"><button type="submit" class="btn btn-primary">수정하기</button></div>
 
