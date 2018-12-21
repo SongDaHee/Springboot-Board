@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.muhayu.dhsongboard.mapper.BoardMapper">
+
+
+    <insert id = "insertBoard" parameterType = "com.muhayu.dhsongboard.model.BoardModel">
+        insert into board('title','content','user','date')
+        values (#{title}, #{content}, #{user},#{date})
+    </insert>
+
+    <select id = "selectList" resultType = "com.muhayu.dhsongboard.model.BoardModel">
+        select * from board WHERE user = #{user}
+    </select>
+
+    <select id = "selectByNum" resultType = "com.muhayu.dhsongboard.model.BoardModel">
+        select * from board WHERE num = #{num}
+    </select>
+
+    <delete id = "deleteBoard" parameterType = "java.lang.Integer">
+        DELETE FROM board WHERE num = #{num}
+    </delete>
+
+    <update id = "updateBoard" parameterType = "com.muhayu.dhsongboard.model.BoardModel">
+        UPDATE board <set> date=#{date}, title=#{title}, content=#{content} </set>
+        WHERE num=#{num}
+    </update>
+
+</mapper>

@@ -26,12 +26,18 @@
             z-index:-1;
             padding-top: 10%;
         }
+
         .container{
             padding-left: 5%;
             padding-right:5%;
+            color: black;
+            background-color: rgba( 255, 255, 255, 0.7 );
+            border-radius: 20px;
+            padding-top: 2%;
+            padding-bottom: 2%;
         }
-        .pagination{
-            justify-content: center;
+        .button{
+            text-align: center;
         }
 
     </style>
@@ -59,37 +65,30 @@
 
 <div class="back_img">
     <div class="container">
-        <form method="post" action="/list/delete">
-    <div class="jumbotron">
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th scope="col">번호</th>
-            <th scope="col">제목</th>
-            <th scope="col">작성자</th>
-            <th scope="col">날짜</th>
-        </tr>
-        </thead>
-        <tbody>
-        <#list list as item>
-        <tr class="table-primary">
-            <td>
-            <input type="checkbox" name="checknum" value="${item.num}"/>${item.num}</td>
-            <td onclick=location.href='http://localhost:8080/list/view/${item.num}'>${item.title}</td>
-            <td onclick=location.href='http://localhost:8080/list/view/${item.num}'>${item.user}</td>
-            <td onclick=location.href='http://localhost:8080/list/view/${item.num}'>${item.date}</td>
-        </tr>
-        </#list>
-        </tbody>
-        </table>
+        <form>
+            <fieldset>
+                <legend><b>글 조회하기</b></legend>
 
-            <button type="button" class="btn btn-primary"
-                    onclick="location.href='http://localhost:8080/list/write'">글쓰기</button>
-            <button type="submit" class="btn btn-primary">삭제</button>
+                <div class="form-group">
+                    <label>날짜 : ${date}</label>
+                </div>
+
+                <div class="form-group">
+                    <label>제목 : ${title}</label>
+                </div>
+
+                <div class="form-group">
+                    <label>내용<br> ${content}</label>
+                </div>
+
+                <button type="button" class="btn btn-primary"
+                        onclick="location.href='http://localhost:8080/list/edit/${num}'">수정하기</button>
+                <button type="button" class="btn btn-primary"
+                        onclick="location.href='http://localhost:8080/list/delete/${num}'">삭제</button>
+            </fieldset>
         </form>
     </div>
-        </div>
-    </div>
+</div>
 
 </body>
 </html>

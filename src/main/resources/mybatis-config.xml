@@ -5,6 +5,7 @@
         <package name="com.muhayu.dhsongboard.model"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mapper/UserinfoMapper.xml"/>
+        <mapper resource="mapper/UserInfoMapper.xml"/>
+        <mapper resource="mapper/BoardMapper.xml"/>
     </mappers>
 </configuration>

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/board/css/bootstrap.css"/>
     <link rel="stylesheet" href="/board/css/_variables.scss"/>
     <link rel="stylesheet" href="/board/css/_bootswatch.scss"/>
+    <script src="/webjars/jquery/3.3.1/dist/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.4/dist/js/bootstrap.min.js"></script>
 
 <style>
     .back_img{
@@ -38,8 +40,6 @@
 </head>
 
 <body>
-<script src="/webjars/jquery/3.3.1/dist/jquery.min.js"></script>
-<script src="/webjars/bootstrap/3.3.4/dist/js/bootstrap.min.js"></script>
 
 <nav class="navbar navbar-expand-sm navbar-fixed-top navbar-dark bg-primary">
         <a class="navbar-brand" href="/home">DHSONG's BOARD</a>
@@ -52,6 +52,9 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/list">/List/</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/logout">/Logout/</a>
         </li>
     </ul>
 </nav>
